@@ -29,9 +29,9 @@ SECRET_KEY = 'django-insecure-ov#r^^&xv&^0vmc(zj&h_t^$*52@8jicn=%*z*@s-=li!s_p@=
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'forum-prod-api.herokuapp.com']
-CORS_ALLOW_ALL_ORIGINS = False
-CORS_ALLOWED_ORIGINS = ['http://localhost:3000', 'http://127.0.0.1:3000', 'https://frontend-electric-views.herokuapp.com']
+ALLOWED_HOSTS = ['*']
+CORS_ALLOW_ALL_ORIGINS = True
+
 
 # Application definition
 
@@ -94,11 +94,11 @@ WSGI_APPLICATION = 'config.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'de2dfvem42krij',
-        'USER': 'fozuxwpcescfyf',
+        'NAME': 'd4moffc9lil91i',
+        'USER': 'otageoluljilus',
         'PORT': 5432,
-        'HOST': 'ec2-52-205-45-219.compute-1.amazonaws.com',
-        'PASSWORD': '7bb13323d080d66bfaf110d4c92cb42c4bdee4829a7bba8c523d072c8daa8d1e',
+        'HOST': 'ec2-3-226-163-72.compute-1.amazonaws.com',
+        'PASSWORD': 'd2c7f1677e568fdc03799e773c546e757a6658b1f26fd07f594f31c21ec6516f',
     }
 }
 
